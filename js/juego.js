@@ -92,6 +92,40 @@ const turnoComputador = (puntosMinimos) => {
     }, 1000);
 }
 
+// Funcion para generar cartas al iniciar juego
+const cartasI = () => {
+    const carta1 = pedirCarta();
+    puntosjugador = puntosjugador + valorCarta(carta1);
+    small[0].innerText = puntosjugador;
+
+    const imgCarta1 = document.createElement('img');
+    imgCarta1.src = `./cartas/${carta1}.png`;
+    imgCarta1.classList.add('carta');
+    divCartasJugador.append(imgCarta1);
+
+    const carta2 = pedirCarta();
+    puntosjugador = puntosjugador + valorCarta(carta2);
+    small[0].innerText = puntosjugador;
+
+    const imgCarta2 = document.createElement('img');
+    imgCarta2.src = `./cartas/${carta2}.png`;
+    imgCarta2.classList.add('carta');
+    divCartasJugador.append(imgCarta2);
+
+
+    const carta = pedirCarta();
+    puntoscomputador = puntoscomputador + valorCarta(carta);
+    small[1].innerText = puntoscomputador;
+
+    const imgCarta = document.createElement('img');
+    imgCarta.src = `./cartas/${carta}.png`;
+    imgCarta.classList.add('carta');
+    divCartasComputador.append(imgCarta);
+
+}
+
+cartasI();
+
 
 // Eventos
 
@@ -131,6 +165,7 @@ btnNuevo.addEventListener('click', () => {
     console.clear();
     deck = []
     deck = crearDeak();
+
 
     puntosjugador = 0;
     puntoscomputador = 0;
