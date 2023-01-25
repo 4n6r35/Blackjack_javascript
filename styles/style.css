@@ -23,4 +23,11 @@ body {
 
 #computador-cartas, #jugador-cartas{
     height: 240px;
+    display: flex;
+    justify-content: center;
+}
+
+.d1{
+    display: grid;
+    align-items: center;
 }
