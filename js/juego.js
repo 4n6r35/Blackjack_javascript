@@ -73,7 +73,7 @@ const turnoComputador = (puntosMinimos) => {
         small[0].innerText = puntoscomputador;
 
         const imgCarta = document.createElement('img');
-        imgCarta.src = `./assets/cartas/${carta}.png`;
+        imgCarta.src = `../assets/cartas/${carta}.png`;
         imgCarta.classList.add('carta');
         divCartasComputador.append(imgCarta);
 
@@ -106,7 +106,7 @@ const cartasI = () => {
     small[1].innerText = puntosjugador;
 
     const imgCarta1 = document.createElement('img');
-    imgCarta1.src = `./assets/cartas/${carta1}.png`;
+    imgCarta1.src = `../assets/cartas/${carta1}.png`;
     imgCarta1.classList.add('carta');
     divCartasJugador.append(imgCarta1);
 
@@ -115,7 +115,7 @@ const cartasI = () => {
     small[1].innerText = puntosjugador;
 
     const imgCarta2 = document.createElement('img');
-    imgCarta2.src = `./assets/cartas/${carta2}.png`;
+    imgCarta2.src = `../assets/cartas/${carta2}.png`;
     imgCarta2.classList.add('carta');
     divCartasJugador.append(imgCarta2);
 
@@ -125,7 +125,7 @@ const cartasI = () => {
     small[0].innerText = puntoscomputador;
 
     const imgCarta = document.createElement('img');
-    imgCarta.src = `./assets/cartas/${carta}.png`;
+    imgCarta.src = `../assets/cartas/${carta}.png`;
     imgCarta.classList.add('carta');
     divCartasComputador.append(imgCarta);
 
@@ -142,7 +142,7 @@ btnPedir.addEventListener('click', () => {
     small[1].innerText = puntosjugador;
 
     const imgCarta = document.createElement('img');
-    imgCarta.src = `./assets/cartas/${carta}.png`;
+    imgCarta.src = `../assets/cartas/${carta}.png`;
     imgCarta.classList.add('carta');
     divCartasJugador.append(imgCarta);
 
