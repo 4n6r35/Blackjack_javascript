@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blackjack</title>
+    <link rel="stylesheet" type="text/css" href="../styles/multiplayer_game.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <img class="background" src="../assets/fnd/ba4.jpg" />
+    <hr />
+    <h1 class="blackjack">Black Jack</h1>
+    <div class="waiting">
+
+        <h2 class="roomHeading" id="waitingrooom" align="center">Waiting Room</h2>
+        <h2 class="roomHeading" id="roomid" align="center">Room Id</h2>
+
+        <form class="centerAlign text-center" style="margin-top: 40px;" action="/multijugador/game">
+            <ul class="list-group" id="list-user-group">
+                <li class="list-group-item active" id="listUser">Users</li>
+                </li>
+            </ul>
+            <button class="btn btn-lg btn-warning login d-none centerAlignBtn" id="startBtnContainer"
+                style="margin-top: 20px;">Start</button>
+        </form>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js"
+        integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w=="
+        crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script> -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../js/multiplayer_game.js"></script>
+</body>
+
+</html>

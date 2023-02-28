@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/inicio.css">
+    <title>Blackjack</title>
+</head>
+
+<body>
+
+    <img class="background" src="./assets/fnd/blackjack-igralnye-karty.jpg" />
+    <div class="containerHome">
+        <div class="containerHijo">
+            <div class="titleHome">
+                <div class="rainbow"> Blackjack</div>
+
+            </div>
+            <div class="row mt-2">
+                <div class="col text-center">
+                    <button id="btnIniciarJuego" class="btn btn-primary" onclick=" redirect()">Iniciar Juego</button>
+                    <button id="btnMultijugador" class="btn btn-primary" onclick="redirect_mltplayer()">Multijugador</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function redirect() {
+            window.location.href = "/juego"
+        }
+        function redirect_mltplayer() {
+            window.location.href = "/multijugador"
+        }
+    </script>
+</body>
+
+</html>
